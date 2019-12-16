@@ -1,0 +1,124 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 0 ]
+"6 /opt/microchip/xc8/v2.10/pic/sources/c90/common/rand.c
+[v _srand srand `(v  1 e 1 0 ]
+"12
+[v _rand rand `(i  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.10/pic/sources/c90/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.10/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.10/pic/sources/c90/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.10/pic/sources/c90/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"49 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/interrupts.c
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+"31 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"18 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+"25 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+"166 /opt/microchip/xc8/v2.10/pic/include/pic16f628a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"310
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"767
+[v _CMCON CMCON `VEuc  1 e 1 @31 ]
+"907
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"969
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1031
+[v _PIE1 PIE1 `VEuc  1 e 1 @140 ]
+"1422
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"1458
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"1461
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"1464
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"1467
+[v _RA3 RA3 `VEb  1 e 0 @43 ]
+"1470
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"1479
+[v _RA7 RA7 `VEb  1 e 0 @47 ]
+"1509
+[v _RBIF RBIF `VEb  1 e 0 @88 ]
+"3 /opt/microchip/xc8/v2.10/pic/sources/c90/common/rand.c
+[v _randx randx `l  1 s 4 randx ]
+"29 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/interrupts.c
+[v _counter counter `i  1 e 2 0 ]
+"30
+[v _ii ii `uc  1 e 1 0 ]
+"31
+[v _bit_counter bit_counter `uc  1 e 1 0 ]
+"32
+[v _old_state old_state `[5]uc  1 e 5 0 ]
+"33
+[v _new_state new_state `[5]uc  1 e 5 0 ]
+"34
+[v _delay delay `[5]uc  1 e 5 0 ]
+"41
+[v _sample sample `[5]uc  1 e 5 0 ]
+"24 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/main.c
+[v _timer_for_demo timer_for_demo `i  1 e 2 0 ]
+"31
+[v _main main `(v  1 e 1 0 ]
+{
+"50
+[v main@k k `uc  1 a 1 20 ]
+"112
+} 0
+"6 /opt/microchip/xc8/v2.10/pic/sources/c90/common/rand.c
+[v _srand srand `(v  1 e 1 0 ]
+{
+[v srand@x x `ui  1 p 2 15 ]
+"9
+} 0
+"25 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"43
+} 0
+"18 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 1 0 ]
+{
+"25
+} 0
+"49 /home/user/MPLABXProjects/PWM_lights_pic16f628a.X/interrupts.c
+[v _my_isr_routine my_isr_routine `II(v  1 e 1 0 ]
+{
+"86
+[v my_isr_routine@j_47 j `uc  1 a 1 12 ]
+"65
+[v my_isr_routine@j j `uc  1 a 1 14 ]
+"54
+[v my_isr_routine@i i `uc  1 a 1 13 ]
+"97
+} 0
+"12 /opt/microchip/xc8/v2.10/pic/sources/c90/common/rand.c
+[v _rand rand `(i  1 e 2 0 ]
+{
+"17
+} 0
+"15 /opt/microchip/xc8/v2.10/pic/sources/c90/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+{
+"17
+[v ___lmul@product product `ul  1 a 4 9 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 0 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
+"129
+} 0

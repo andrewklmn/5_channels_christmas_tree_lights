@@ -1,0 +1,393 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"19 ./system.h
+[; ;./system.h: 19: void ConfigureOscillator(void);
+[v _ConfigureOscillator `(v ~T0 @X0 0 ef ]
+"13 ./user.h
+[; ;./user.h: 13: void InitApp(void);
+[v _InitApp `(v ~T0 @X0 0 ef ]
+"76 /opt/microchip/xc8/v2.10/pic/include/c90/stdlib.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/c90/stdlib.h: 76: extern void srand(unsigned int);
+[v _srand `(v ~T0 @X0 0 ef1`ui ]
+"1479 /opt/microchip/xc8/v2.10/pic/include/pic16f628a.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1479: extern volatile __bit RA7 __attribute__((address(0x2F)));
+[v _RA7 `Vb ~T0 @X0 0 e@47 ]
+"1422
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1422: extern volatile __bit GIE __attribute__((address(0x5F)));
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"166
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 166: extern volatile unsigned char PORTA __attribute__((address(0x005)));
+[v _PORTA `Vuc ~T0 @X0 0 e@5 ]
+[v F461 `(v ~T0 @X0 1 tf1`ul ]
+"92 /opt/microchip/xc8/v2.10/pic/include/pic.h
+[v __delay `JF461 ~T0 @X0 0 e ]
+[p i __delay ]
+"54 /opt/microchip/xc8/v2.10/pic/include/pic16f628a.h
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"230
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 230: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"292
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 292: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"312
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 312: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"390
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 390: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"447
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 447: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"454
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 454: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"461
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 461: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"468
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 468: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"527
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 527: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"534
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 534: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"605
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 605: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"612
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 612: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"619
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 619: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"626
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 626: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"684
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 684: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"755
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 755: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"762
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 762: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"769
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 769: __asm("CMCON equ 01Fh");
+[; <" CMCON equ 01Fh ;# ">
+"839
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 839: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"909
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 909: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"971
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 971: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1033
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1033: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1090
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1090: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1139
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1139: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1146
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1146: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"1203
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1203: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"1210
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1210: __asm("EEDATA equ 09Ah");
+[; <" EEDATA equ 09Ah ;# ">
+"1217
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1217: __asm("EEADR equ 09Bh");
+[; <" EEADR equ 09Bh ;# ">
+"1224
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1224: __asm("EECON1 equ 09Ch");
+[; <" EECON1 equ 09Ch ;# ">
+"1262
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1262: __asm("EECON2 equ 09Dh");
+[; <" EECON2 equ 09Dh ;# ">
+"1269
+[; ;/opt/microchip/xc8/v2.10/pic/include/pic16f628a.h: 1269: __asm("VRCON equ 09Fh");
+[; <" VRCON equ 09Fh ;# ">
+"24 main.c
+[; ;main.c: 24: int timer_for_demo = 0;
+[v _timer_for_demo `i ~T0 @X0 1 e ]
+[i _timer_for_demo
+-> 0 `i
+]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"31
+[; ;main.c: 31: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"32
+[; ;main.c: 32: {
+{
+[e :U _main ]
+[f ]
+"34
+[; ;main.c: 34:     ConfigureOscillator();
+[e ( _ConfigureOscillator ..  ]
+"37
+[; ;main.c: 37:     InitApp();
+[e ( _InitApp ..  ]
+"39
+[; ;main.c: 39:     srand(200);
+[e ( _srand (1 -> -> 200 `i `ui ]
+"41
+[; ;main.c: 41:     while(1)
+[e :U 57 ]
+"42
+[; ;main.c: 42:     {
+{
+"43
+[; ;main.c: 43:         if (RA7==1) {
+[e $ ! == -> _RA7 `i -> 1 `i 59  ]
+{
+"44
+[; ;main.c: 44:             GIE = 0;
+[e = _GIE -> -> 0 `i `b ]
+"45
+[; ;main.c: 45:             PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"46
+[; ;main.c: 46:         } else {
+}
+[e $U 60  ]
+[e :U 59 ]
+{
+"47
+[; ;main.c: 47:             PORTA = 0b11111111;
+[e = _PORTA -> -> 255 `i `uc ]
+"48
+[; ;main.c: 48:             if (timer_for_demo==0) {
+[e $ ! == _timer_for_demo -> 0 `i 61  ]
+{
+"49
+[; ;main.c: 49:                 GIE = 0;
+[e = _GIE -> -> 0 `i `b ]
+"50
+[; ;main.c: 50:                 for (char k=0; k<4; k++) {
+{
+[v _k `uc ~T0 @X0 1 a ]
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 4 `i 62  ]
+[e $U 63  ]
+[e :U 62 ]
+{
+"51
+[; ;main.c: 51:                     PORTA = 0b00011110;
+[e = _PORTA -> -> 30 `i `uc ]
+"52
+[; ;main.c: 52:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"53
+[; ;main.c: 53:                     PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"54
+[; ;main.c: 54:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"55
+[; ;main.c: 55:                     PORTA = 0b00010101;
+[e = _PORTA -> -> 21 `i `uc ]
+"56
+[; ;main.c: 56:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"57
+[; ;main.c: 57:                     PORTA = 0b00001010;
+[e = _PORTA -> -> 10 `i `uc ]
+"58
+[; ;main.c: 58:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"59
+[; ;main.c: 59:                     PORTA = 0b00011111;
+[e = _PORTA -> -> 31 `i `uc ]
+"60
+[; ;main.c: 60:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"61
+[; ;main.c: 61:                     PORTA = 0b00001111;
+[e = _PORTA -> -> 15 `i `uc ]
+"62
+[; ;main.c: 62:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"63
+[; ;main.c: 63:                     PORTA = 0b00010111;
+[e = _PORTA -> -> 23 `i `uc ]
+"64
+[; ;main.c: 64:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"65
+[; ;main.c: 65:                     PORTA = 0b00011011;
+[e = _PORTA -> -> 27 `i `uc ]
+"66
+[; ;main.c: 66:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"67
+[; ;main.c: 67:                     PORTA = 0b00011101;
+[e = _PORTA -> -> 29 `i `uc ]
+"68
+[; ;main.c: 68:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"69
+[; ;main.c: 69:                     PORTA = 0b00011110;
+[e = _PORTA -> -> 30 `i `uc ]
+"70
+[; ;main.c: 70:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"71
+[; ;main.c: 71:                     PORTA = 0b00010000;
+[e = _PORTA -> -> 16 `i `uc ]
+"72
+[; ;main.c: 72:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"73
+[; ;main.c: 73:                     PORTA = 0b00001000;
+[e = _PORTA -> -> 8 `i `uc ]
+"74
+[; ;main.c: 74:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"75
+[; ;main.c: 75:                     PORTA = 0b00000100;
+[e = _PORTA -> -> 4 `i `uc ]
+"76
+[; ;main.c: 76:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"77
+[; ;main.c: 77:                     PORTA = 0b00000010;
+[e = _PORTA -> -> 2 `i `uc ]
+"78
+[; ;main.c: 78:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"79
+[; ;main.c: 79:                     PORTA = 0b00000001;
+[e = _PORTA -> -> 1 `i `uc ]
+"80
+[; ;main.c: 80:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"81
+[; ;main.c: 81:                     PORTA = 0b00000000;
+[e = _PORTA -> -> 0 `i `uc ]
+"82
+[; ;main.c: 82:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"83
+[; ;main.c: 83:                     PORTA = 0b00000001;
+[e = _PORTA -> -> 1 `i `uc ]
+"84
+[; ;main.c: 84:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"85
+[; ;main.c: 85:                     PORTA = 0b00000011;
+[e = _PORTA -> -> 3 `i `uc ]
+"86
+[; ;main.c: 86:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"87
+[; ;main.c: 87:                     PORTA = 0b00000110;
+[e = _PORTA -> -> 6 `i `uc ]
+"88
+[; ;main.c: 88:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"89
+[; ;main.c: 89:                     PORTA = 0b00001100;
+[e = _PORTA -> -> 12 `i `uc ]
+"90
+[; ;main.c: 90:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"91
+[; ;main.c: 91:                     PORTA = 0b00011000;
+[e = _PORTA -> -> 24 `i `uc ]
+"92
+[; ;main.c: 92:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"93
+[; ;main.c: 93:                     PORTA = 0b00000111;
+[e = _PORTA -> -> 7 `i `uc ]
+"94
+[; ;main.c: 94:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"95
+[; ;main.c: 95:                     PORTA = 0b00010011;
+[e = _PORTA -> -> 19 `i `uc ]
+"96
+[; ;main.c: 96:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"97
+[; ;main.c: 97:                     PORTA = 0b00011001;
+[e = _PORTA -> -> 25 `i `uc ]
+"98
+[; ;main.c: 98:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"99
+[; ;main.c: 99:                     PORTA = 0b00011100;
+[e = _PORTA -> -> 28 `i `uc ]
+"100
+[; ;main.c: 100:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"101
+[; ;main.c: 101:                     PORTA = 0b00011110;
+[e = _PORTA -> -> 30 `i `uc ]
+"102
+[; ;main.c: 102:                     _delay((unsigned long)((200)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"103
+[; ;main.c: 103:                 };
+}
+[e ++ _k -> -> 1 `i `uc ]
+[e $ < -> _k `i -> 4 `i 62  ]
+[e :U 63 ]
+}
+"104
+[; ;main.c: 104:                 timer_for_demo=10;
+[e = _timer_for_demo -> 10 `i ]
+"105
+[; ;main.c: 105:             };
+}
+[e :U 61 ]
+"106
+[; ;main.c: 106:             GIE = 1;
+[e = _GIE -> -> 1 `i `b ]
+"107
+[; ;main.c: 107:             _delay((unsigned long)((1000)*(4000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"108
+[; ;main.c: 108:             timer_for_demo--;
+[e -- _timer_for_demo -> 1 `i ]
+"109
+[; ;main.c: 109:         };
+}
+[e :U 60 ]
+"110
+[; ;main.c: 110:     };
+}
+[e :U 56 ]
+[e $U 57  ]
+[e :U 58 ]
+"112
+[; ;main.c: 112: };
+[e :UE 55 ]
+}
